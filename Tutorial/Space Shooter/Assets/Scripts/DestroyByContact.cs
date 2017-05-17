@@ -7,8 +7,8 @@ public class DestroyByContact : MonoBehaviour {
     public GameObject explosion;
     public GameObject playerExplosion;
     public int scoreValue;
+    public int maxLife;
 
-    private int maxLife;
     private int life;
     private GameController gameController;
 
@@ -24,11 +24,10 @@ public class DestroyByContact : MonoBehaviour {
             Debug.Log("Cannot find 'GameController' script");
         }
 
-        maxLife = Random.Range(5, 10);
         life = maxLife;
     }
 
-    void OnAsteroidHit()
+    void OnHit()
     {
         Instantiate(explosion, transform.position, transform.rotation);
 
@@ -38,11 +37,11 @@ public class DestroyByContact : MonoBehaviour {
 
         if (life <= 0)
         {
-            OnAsteroidDestroyed();
+            OnDestroyed();
         }
     }
 
-    void OnAsteroidDestroyed()
+    void OnDestroyed()
     {
         Destroy(gameObject);
 
@@ -62,12 +61,14 @@ public class DestroyByContact : MonoBehaviour {
         {
             Destroy(other.gameObject);
             Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
+
+            gameController.GameOver();
         }
 
         // Hit bolt
         else if (other.CompareTag("bolt"))
         {
-            OnAsteroidHit();
+            OnHit();
             Destroy(other.gameObject);
         }
 
