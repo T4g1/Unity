@@ -34,6 +34,8 @@ public class DestroyByContact : MonoBehaviour {
 
         life -= 1;
 
+        gameController.AddScore(1);
+
         if (life <= 0)
         {
             OnAsteroidDestroyed();
@@ -44,7 +46,7 @@ public class DestroyByContact : MonoBehaviour {
     {
         Destroy(gameObject);
 
-        gameController.AddScore(scoreValue + maxLife);
+        gameController.AddScore(scoreValue);
     }
 
     void OnTriggerEnter(Collider other)
