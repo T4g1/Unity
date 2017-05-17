@@ -72,11 +72,15 @@ public class DestroyByContact : MonoBehaviour {
             Destroy(other.gameObject);
         }
 
-        // Hit asteroid
-        else if (other.CompareTag("hazard"))
+        // Hit enemy
+        else if (other.CompareTag("hazard") && !CompareTag("enemy bolt"))
         {
             Destroy(gameObject);
-            Instantiate(explosion, transform.position, transform.rotation);
+
+            if (explosion != null)
+            {
+                Instantiate(explosion, transform.position, transform.rotation);
+            }
         }
     }
 }
