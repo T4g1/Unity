@@ -47,9 +47,9 @@
 			"file": "Assets/Scripts/DestroyByContact.cs",
 			"settings":
 			{
-				"buffer_size": 479,
+				"buffer_size": 1914,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -125,7 +125,7 @@
 	"command_palette":
 	{
 		"height": 392.0,
-		"last_filter": "Package Control: ",
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -228,15 +228,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 479,
+						"buffer_size": 1914,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								444,
-								444
+								972,
+								972
 							]
 						],
 						"settings":
@@ -338,7 +338,7 @@
 		[
 			[
 				"",
-				"E:\\Documents\\Projets\\CowLAN mail.sublime-project"
+				"E:\\Documents\\Projets\\thesis.sublime-project"
 			]
 		],
 		"width": 380.0
