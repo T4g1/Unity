@@ -1,0 +1,613 @@
+fileFormatVersion: 2
+guid: 077420ee93d143940bce382e15f59713
+timeCreated: 1495445815
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Abdomen
+    100002: Body
+    100004: Head
+    100006: Head_0
+    100008: Left_Ankle
+    100010: Left_Arm
+    100012: Left_Arm_0
+    100014: Left_Elbow
+    100016: Left_Foot
+    100018: Left_Foot_0
+    100020: Left_Forearm
+    100022: Left_Forearm_0
+    100024: Left_Hand
+    100026: Left_Hand_0
+    100028: Left_Knee
+    100030: Left_Leg
+    100032: Left_Leg_0
+    100034: Left_Shoulder
+    100036: Left_Shoulder_0
+    100038: Left_Thigh
+    100040: Left_Thigh_0
+    100042: Left_Wrist
+    100044: Leg_Upper_Joint
+    100046: Lower_Left_Body
+    100048: Lower_Right_Body
+    100050: Neck
+    100052: //RootNode
+    100054: Right_Ankle
+    100056: Right_Arm
+    100058: Right_Arm_0
+    100060: Right_Elbow
+    100062: Right_Foot
+    100064: Right_Foot_0
+    100066: Right_Forearm
+    100068: Right_Forearm_0
+    100070: Right_Hand
+    100072: Right_Hand_0
+    100074: Right_Knee
+    100076: Right_Leg
+    100078: Right_Leg_0
+    100080: Right_Shoulder
+    100082: Right_Shoulder_0
+    100084: Right_Thigh
+    100086: Right_Tigh
+    100088: Right_Wrist
+    100090: Skeleton
+    100092: Torso
+    100094: Torso_Middle
+    100096: Upper_Body
+    400000: Abdomen
+    400002: Body
+    400004: Head
+    400006: Head_0
+    400008: Left_Ankle
+    400010: Left_Arm
+    400012: Left_Arm_0
+    400014: Left_Elbow
+    400016: Left_Foot
+    400018: Left_Foot_0
+    400020: Left_Forearm
+    400022: Left_Forearm_0
+    400024: Left_Hand
+    400026: Left_Hand_0
+    400028: Left_Knee
+    400030: Left_Leg
+    400032: Left_Leg_0
+    400034: Left_Shoulder
+    400036: Left_Shoulder_0
+    400038: Left_Thigh
+    400040: Left_Thigh_0
+    400042: Left_Wrist
+    400044: Leg_Upper_Joint
+    400046: Lower_Left_Body
+    400048: Lower_Right_Body
+    400050: Neck
+    400052: //RootNode
+    400054: Right_Ankle
+    400056: Right_Arm
+    400058: Right_Arm_0
+    400060: Right_Elbow
+    400062: Right_Foot
+    400064: Right_Foot_0
+    400066: Right_Forearm
+    400068: Right_Forearm_0
+    400070: Right_Hand
+    400072: Right_Hand_0
+    400074: Right_Knee
+    400076: Right_Leg
+    400078: Right_Leg_0
+    400080: Right_Shoulder
+    400082: Right_Shoulder_0
+    400084: Right_Thigh
+    400086: Right_Tigh
+    400088: Right_Wrist
+    400090: Skeleton
+    400092: Torso
+    400094: Torso_Middle
+    400096: Upper_Body
+    4300000: Head
+    4300002: Neck
+    4300004: Right_Hand
+    4300006: Left_Hand
+    4300008: Right_Wrist
+    4300010: Left_Wrist
+    4300012: Right_Forearm
+    4300014: Left_Forearm
+    4300016: Right_Elbow
+    4300018: Left_Elbow
+    4300020: Right_Arm
+    4300022: Left_Arm
+    4300024: Right_Shoulder
+    4300026: Left_Shoulder
+    4300028: Right_Foot
+    4300030: Left_Foot
+    4300032: Right_Ankle
+    4300034: Left_Ankle
+    4300036: Right_Leg
+    4300038: Left_Leg
+    4300040: Right_Knee
+    4300042: Left_Knee
+    4300044: Right_Tigh
+    4300046: Left_Thigh
+    4300048: Leg_Upper_Joint
+    4300050: Abdomen
+    4300052: Torso_Middle
+    4300054: Torso
+    7400000: Default Take
+    7400002: Iddle
+    7400004: Run
+    9500000: //RootNode
+    13700000: Abdomen
+    13700002: Head
+    13700004: Left_Ankle
+    13700006: Left_Arm
+    13700008: Left_Elbow
+    13700010: Left_Foot
+    13700012: Left_Forearm
+    13700014: Left_Hand
+    13700016: Left_Knee
+    13700018: Left_Leg
+    13700020: Left_Shoulder
+    13700022: Left_Thigh
+    13700024: Left_Wrist
+    13700026: Leg_Upper_Joint
+    13700028: Neck
+    13700030: Right_Ankle
+    13700032: Right_Arm
+    13700034: Right_Elbow
+    13700036: Right_Foot
+    13700038: Right_Forearm
+    13700040: Right_Hand
+    13700042: Right_Knee
+    13700044: Right_Leg
+    13700046: Right_Shoulder
+    13700048: Right_Tigh
+    13700050: Right_Wrist
+    13700052: Torso
+    13700054: Torso_Middle
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 44
+      lastFrame: 74
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Abdomen
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Left_Ankle
+        weight: 1
+      - path: Left_Arm
+        weight: 1
+      - path: Left_Elbow
+        weight: 1
+      - path: Left_Foot
+        weight: 1
+      - path: Left_Forearm
+        weight: 1
+      - path: Left_Hand
+        weight: 1
+      - path: Left_Knee
+        weight: 1
+      - path: Left_Leg
+        weight: 1
+      - path: Left_Shoulder
+        weight: 1
+      - path: Left_Thigh
+        weight: 1
+      - path: Left_Wrist
+        weight: 1
+      - path: Leg_Upper_Joint
+        weight: 1
+      - path: Neck
+        weight: 1
+      - path: Right_Ankle
+        weight: 1
+      - path: Right_Arm
+        weight: 1
+      - path: Right_Elbow
+        weight: 1
+      - path: Right_Foot
+        weight: 1
+      - path: Right_Forearm
+        weight: 1
+      - path: Right_Hand
+        weight: 1
+      - path: Right_Knee
+        weight: 1
+      - path: Right_Leg
+        weight: 1
+      - path: Right_Shoulder
+        weight: 1
+      - path: Right_Tigh
+        weight: 1
+      - path: Right_Wrist
+        weight: 1
+      - path: Skeleton
+        weight: 1
+      - path: Skeleton/Body
+        weight: 1
+      - path: Skeleton/Body/Lower_Left_Body
+        weight: 1
+      - path: Skeleton/Body/Lower_Left_Body/Left_Thigh_0
+        weight: 1
+      - path: Skeleton/Body/Lower_Left_Body/Left_Thigh_0/Left_Leg_0
+        weight: 1
+      - path: Skeleton/Body/Lower_Left_Body/Left_Thigh_0/Left_Leg_0/Left_Foot_0
+        weight: 1
+      - path: Skeleton/Body/Lower_Right_Body
+        weight: 1
+      - path: Skeleton/Body/Lower_Right_Body/Right_Thigh
+        weight: 1
+      - path: Skeleton/Body/Lower_Right_Body/Right_Thigh/Right_Leg_0
+        weight: 1
+      - path: Skeleton/Body/Lower_Right_Body/Right_Thigh/Right_Leg_0/Right_Foot_0
+        weight: 1
+      - path: Skeleton/Body/Upper_Body
+        weight: 1
+      - path: Skeleton/Body/Upper_Body/Head_0
+        weight: 1
+      - path: Skeleton/Body/Upper_Body/Left_Shoulder_0
+        weight: 1
+      - path: Skeleton/Body/Upper_Body/Left_Shoulder_0/Left_Arm_0
+        weight: 1
+      - path: Skeleton/Body/Upper_Body/Left_Shoulder_0/Left_Arm_0/Left_Forearm_0
+        weight: 1
+      - path: Skeleton/Body/Upper_Body/Left_Shoulder_0/Left_Arm_0/Left_Forearm_0/Left_Hand_0
+        weight: 1
+      - path: Skeleton/Body/Upper_Body/Right_Shoulder_0
+        weight: 1
+      - path: Skeleton/Body/Upper_Body/Right_Shoulder_0/Right_Arm_0
+        weight: 1
+      - path: Skeleton/Body/Upper_Body/Right_Shoulder_0/Right_Arm_0/Right_Forearm_0
+        weight: 1
+      - path: Skeleton/Body/Upper_Body/Right_Shoulder_0/Right_Arm_0/Right_Forearm_0/Right_Hand_0
+        weight: 1
+      - path: Torso
+        weight: 1
+      - path: Torso_Middle
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Iddle
+      takeName: Iddle
+      firstFrame: 74
+      lastFrame: 249
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Abdomen
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Left_Ankle
+        weight: 1
+      - path: Left_Arm
+        weight: 1
+      - path: Left_Elbow
+        weight: 1
+      - path: Left_Foot
+        weight: 1
+      - path: Left_Forearm
+        weight: 1
+      - path: Left_Hand
+        weight: 1
+      - path: Left_Knee
+        weight: 1
+      - path: Left_Leg
+        weight: 1
+      - path: Left_Shoulder
+        weight: 1
+      - path: Left_Thigh
+        weight: 1
+      - path: Left_Wrist
+        weight: 1
+      - path: Leg_Upper_Joint
+        weight: 1
+      - path: Neck
+        weight: 1
+      - path: Right_Ankle
+        weight: 1
+      - path: Right_Arm
+        weight: 1
+      - path: Right_Elbow
+        weight: 1
+      - path: Right_Foot
+        weight: 1
+      - path: Right_Forearm
+        weight: 1
+      - path: Right_Hand
+        weight: 1
+      - path: Right_Knee
+        weight: 1
+      - path: Right_Leg
+        weight: 1
+      - path: Right_Shoulder
+        weight: 1
+      - path: Right_Tigh
+        weight: 1
+      - path: Right_Wrist
+        weight: 1
+      - path: Skeleton
+        weight: 1
+      - path: Skeleton/Body
+        weight: 1
+      - path: Skeleton/Body/Lower_Left_Body
+        weight: 1
+      - path: Skeleton/Body/Lower_Left_Body/Left_Thigh_0
+        weight: 1
+      - path: Skeleton/Body/Lower_Left_Body/Left_Thigh_0/Left_Leg_0
+        weight: 1
+      - path: Skeleton/Body/Lower_Left_Body/Left_Thigh_0/Left_Leg_0/Left_Foot_0
+        weight: 1
+      - path: Skeleton/Body/Lower_Right_Body
+        weight: 1
+      - path: Skeleton/Body/Lower_Right_Body/Right_Thigh
+        weight: 1
+      - path: Skeleton/Body/Lower_Right_Body/Right_Thigh/Right_Leg_0
+        weight: 1
+      - path: Skeleton/Body/Lower_Right_Body/Right_Thigh/Right_Leg_0/Right_Foot_0
+        weight: 1
+      - path: Skeleton/Body/Upper_Body
+        weight: 1
+      - path: Skeleton/Body/Upper_Body/Head_0
+        weight: 1
+      - path: Skeleton/Body/Upper_Body/Left_Shoulder_0
+        weight: 1
+      - path: Skeleton/Body/Upper_Body/Left_Shoulder_0/Left_Arm_0
+        weight: 1
+      - path: Skeleton/Body/Upper_Body/Left_Shoulder_0/Left_Arm_0/Left_Forearm_0
+        weight: 1
+      - path: Skeleton/Body/Upper_Body/Left_Shoulder_0/Left_Arm_0/Left_Forearm_0/Left_Hand_0
+        weight: 1
+      - path: Skeleton/Body/Upper_Body/Right_Shoulder_0
+        weight: 1
+      - path: Skeleton/Body/Upper_Body/Right_Shoulder_0/Right_Arm_0
+        weight: 1
+      - path: Skeleton/Body/Upper_Body/Right_Shoulder_0/Right_Arm_0/Right_Forearm_0
+        weight: 1
+      - path: Skeleton/Body/Upper_Body/Right_Shoulder_0/Right_Arm_0/Right_Forearm_0/Right_Hand_0
+        weight: 1
+      - path: Torso
+        weight: 1
+      - path: Torso_Middle
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run
+      takeName: Run
+      firstFrame: 44
+      lastFrame: 74
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Abdomen
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Left_Ankle
+        weight: 1
+      - path: Left_Arm
+        weight: 1
+      - path: Left_Elbow
+        weight: 1
+      - path: Left_Foot
+        weight: 1
+      - path: Left_Forearm
+        weight: 1
+      - path: Left_Hand
+        weight: 1
+      - path: Left_Knee
+        weight: 1
+      - path: Left_Leg
+        weight: 1
+      - path: Left_Shoulder
+        weight: 1
+      - path: Left_Thigh
+        weight: 1
+      - path: Left_Wrist
+        weight: 1
+      - path: Leg_Upper_Joint
+        weight: 1
+      - path: Neck
+        weight: 1
+      - path: Right_Ankle
+        weight: 1
+      - path: Right_Arm
+        weight: 1
+      - path: Right_Elbow
+        weight: 1
+      - path: Right_Foot
+        weight: 1
+      - path: Right_Forearm
+        weight: 1
+      - path: Right_Hand
+        weight: 1
+      - path: Right_Knee
+        weight: 1
+      - path: Right_Leg
+        weight: 1
+      - path: Right_Shoulder
+        weight: 1
+      - path: Right_Tigh
+        weight: 1
+      - path: Right_Wrist
+        weight: 1
+      - path: Skeleton
+        weight: 1
+      - path: Skeleton/Body
+        weight: 1
+      - path: Skeleton/Body/Lower_Left_Body
+        weight: 1
+      - path: Skeleton/Body/Lower_Left_Body/Left_Thigh_0
+        weight: 1
+      - path: Skeleton/Body/Lower_Left_Body/Left_Thigh_0/Left_Leg_0
+        weight: 1
+      - path: Skeleton/Body/Lower_Left_Body/Left_Thigh_0/Left_Leg_0/Left_Foot_0
+        weight: 1
+      - path: Skeleton/Body/Lower_Right_Body
+        weight: 1
+      - path: Skeleton/Body/Lower_Right_Body/Right_Thigh
+        weight: 1
+      - path: Skeleton/Body/Lower_Right_Body/Right_Thigh/Right_Leg_0
+        weight: 1
+      - path: Skeleton/Body/Lower_Right_Body/Right_Thigh/Right_Leg_0/Right_Foot_0
+        weight: 1
+      - path: Skeleton/Body/Upper_Body
+        weight: 1
+      - path: Skeleton/Body/Upper_Body/Head_0
+        weight: 1
+      - path: Skeleton/Body/Upper_Body/Left_Shoulder_0
+        weight: 1
+      - path: Skeleton/Body/Upper_Body/Left_Shoulder_0/Left_Arm_0
+        weight: 1
+      - path: Skeleton/Body/Upper_Body/Left_Shoulder_0/Left_Arm_0/Left_Forearm_0
+        weight: 1
+      - path: Skeleton/Body/Upper_Body/Left_Shoulder_0/Left_Arm_0/Left_Forearm_0/Left_Hand_0
+        weight: 1
+      - path: Skeleton/Body/Upper_Body/Right_Shoulder_0
+        weight: 1
+      - path: Skeleton/Body/Upper_Body/Right_Shoulder_0/Right_Arm_0
+        weight: 1
+      - path: Skeleton/Body/Upper_Body/Right_Shoulder_0/Right_Arm_0/Right_Forearm_0
+        weight: 1
+      - path: Skeleton/Body/Upper_Body/Right_Shoulder_0/Right_Arm_0/Right_Forearm_0/Right_Hand_0
+        weight: 1
+      - path: Torso
+        weight: 1
+      - path: Torso_Middle
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
