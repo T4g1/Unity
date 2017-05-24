@@ -7,21 +7,19 @@ using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
     public int startingHealth = 100;
-    public int currentHealth;
     public Slider healthSlider;
     public Image damageImage;
     public AudioClip deathClip;
     public float flashSpeed = 5f;
     public Color flashColour = new Color(1f, 0f, 0f, 0.1f);
 
-
-    Animator anim;
-    AudioSource playerAudio;
-    PlayerMovement playerMovement;
-    //PlayerShooting playerShooting;
-    bool isDead;
-    bool damaged;
-
+    private Animator anim;
+    private AudioSource playerAudio;
+    private PlayerMovement playerMovement;
+    //private PlayerShooting playerShooting;
+    private bool isDead;
+    private bool damaged;
+    private int currentHealth;
 
     void Awake ()
     {
@@ -31,7 +29,6 @@ public class PlayerHealth : MonoBehaviour
         //playerShooting = GetComponentInChildren <PlayerShooting> ();
         currentHealth = startingHealth;
     }
-
 
     void Update ()
     {
@@ -45,7 +42,6 @@ public class PlayerHealth : MonoBehaviour
         }
         damaged = false;
     }
-
 
     public void TakeDamage (int amount)
     {
@@ -63,8 +59,12 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    public bool IsDead()
+    {
+        return isDead;
+    }
 
-    void Death ()
+    private void Death ()
     {
         isDead = true;
 
@@ -78,7 +78,6 @@ public class PlayerHealth : MonoBehaviour
         playerMovement.enabled = false;
         //playerShooting.enabled = false;
     }
-
 
     public void RestartLevel ()
     {

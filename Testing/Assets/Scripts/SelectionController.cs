@@ -5,15 +5,15 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class SelectionController : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerDownHandler {
-
+public class SelectionController : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerDownHandler
+{
     public Collider terrainCollider;
     public GameObject selectionOutliner;
 
     private List<GameObject> selectedList;
     private Vector2 firstPoint;
     private Vector2 secondPoint;
-    private bool dragSelection = true;
+    private bool dragSelection;
 
     private RectTransform selectionOutlinerPosition;
     private Image selectionOutlinerImage;
@@ -67,9 +67,6 @@ public class SelectionController : MonoBehaviour, IBeginDragHandler, IDragHandle
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        if (eventData.button != PointerEventData.InputButton.Left) return;
-
-        dragSelection = true;
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -124,10 +121,6 @@ public class SelectionController : MonoBehaviour, IBeginDragHandler, IDragHandle
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        if (eventData.button != PointerEventData.InputButton.Left) return;
-
-        dragSelection = false;
-
         selectionOutlinerImage.enabled = false;
     }
 
@@ -147,7 +140,7 @@ public class SelectionController : MonoBehaviour, IBeginDragHandler, IDragHandle
                 }
 
                 GameObject obj = hit.transform.gameObject;
-                if (!obj.CompareTag("Level"))
+                if (obj.CompareTag("Selectable"))
                 {
                     SelectObject(obj);
                 }
@@ -161,8 +154,13 @@ public class SelectionController : MonoBehaviour, IBeginDragHandler, IDragHandle
             {
                 foreach (GameObject selected in selectedList)
                 {
-                    PeonController controller = selected.GetComponent<PeonController>();
-                    controller.SetDestination(hit.point);
+                    IActionable obj = selected.GetComponent<IActionable>();
+                    if (obj == null)
+                    {
+                        continue;
+                    }
+
+                    obj.OnSecondAction(hit.point);
                 }
             }
         }

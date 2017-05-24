@@ -1,21 +1,20 @@
 ﻿using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyHealth : MonoBehaviour
 {
     public int startingHealth = 100;
-    public int currentHealth;
     public float sinkSpeed = 2.5f;
     public int scoreValue = 10;
     public AudioClip deathClip;
 
-
-    Animator anim;
-    AudioSource enemyAudio;
-    ParticleSystem hitParticles;
-    CapsuleCollider capsuleCollider;
-    bool isDead;
-    bool isSinking;
-
+    private Animator anim;
+    private AudioSource enemyAudio;
+    private ParticleSystem hitParticles;
+    private CapsuleCollider capsuleCollider;
+    private bool isDead;
+    private bool isSinking;
+    private int currentHealth;
 
     void Awake ()
     {
@@ -27,7 +26,6 @@ public class EnemyHealth : MonoBehaviour
         currentHealth = startingHealth;
     }
 
-
     void Update ()
     {
         if(isSinking)
@@ -35,7 +33,6 @@ public class EnemyHealth : MonoBehaviour
             transform.Translate (-Vector3.up * sinkSpeed * Time.deltaTime);
         }
     }
-
 
     public void TakeDamage (int amount, Vector3 hitPoint)
     {
@@ -55,6 +52,10 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
+    public bool IsDead()
+    {
+        return currentHealth <= 0;
+    }
 
     void Death ()
     {
@@ -68,10 +69,9 @@ public class EnemyHealth : MonoBehaviour
         enemyAudio.Play ();
     }
 
-
     public void StartSinking ()
     {
-        GetComponent <UnityEngine.AI.NavMeshAgent> ().enabled = false;
+        GetComponent <NavMeshAgent> ().enabled = false;
         GetComponent <Rigidbody> ().isKinematic = true;
         isSinking = true;
         //ScoreManager.score += scoreValue;

@@ -6,17 +6,15 @@ public class PlayerShooting : MonoBehaviour
     public float timeBetweenBullets = 0.15f;
     public float range = 100f;
 
-
-    float timer;
-    Ray shootRay = new Ray();
-    RaycastHit shootHit;
-    int shootableMask;
-    ParticleSystem gunParticles;
-    LineRenderer gunLine;
-    AudioSource gunAudio;
-    Light gunLight;
-    float effectsDisplayTime = 0.2f;
-
+    private float timer;
+    private Ray shootRay = new Ray();
+    private RaycastHit shootHit;
+    private int shootableMask;
+    private ParticleSystem gunParticles;
+    private LineRenderer gunLine;
+    private AudioSource gunAudio;
+    private Light gunLight;
+    private float effectsDisplayTime = 0.2f;
 
     void Awake ()
     {
@@ -27,12 +25,11 @@ public class PlayerShooting : MonoBehaviour
         gunLight = GetComponent<Light> ();
     }
 
-
     void Update ()
     {
         timer += Time.deltaTime;
-
-		if(Input.GetButton ("Fire1") && timer >= timeBetweenBullets && Time.timeScale != 0)
+        
+        if(Input.GetButton ("Fire1") && timer >= timeBetweenBullets && Time.timeScale != 0)
         {
             Shoot ();
         }
@@ -43,13 +40,11 @@ public class PlayerShooting : MonoBehaviour
         }
     }
 
-
     public void DisableEffects ()
     {
         gunLine.enabled = false;
         gunLight.enabled = false;
     }
-
 
     void Shoot ()
     {
