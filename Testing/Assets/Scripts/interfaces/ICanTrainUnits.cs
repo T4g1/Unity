@@ -1,11 +1,7 @@
-﻿using UnityEngine;
-using UnityEditor;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
-public class ICanTrainUnits : ScriptableObject
+interface ICanTrainUnits
 {
-    [MenuItem("Tools/MyTool/Do It in C#")]
-    static void DoIt()
-    {
-        EditorUtility.DisplayDialog("MyTool", "Do It in C# !", "OK", "");
-    }
+    List<GameObject> TrainableUnits { get; }
 }

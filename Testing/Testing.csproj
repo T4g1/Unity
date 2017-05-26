@@ -13,13 +13,11 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>WebGL:20</UnityBuildTarget>
     <UnityVersion>5.6.0f3</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -83,20 +81,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\ActionListController.cs" />
+    <Compile Include="Assets\Scripts\BasicController.cs" />
     <Compile Include="Assets\Scripts\Billboard.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
-    <Compile Include="Assets\Scripts\buildings\HouseController.cs" />
-    <Compile Include="Assets\Scripts\interfaces\IBuildable.cs" />
-    <Compile Include="Assets\Scripts\interfaces\ICanTrainUnits.cs" />
-    <Compile Include="Assets\Scripts\interfaces\ISelectable.cs" />
-    <Compile Include="Assets\Scripts\interfaces\IActionable.cs" />
-    <Compile Include="Assets\Scripts\interfaces\ICanBuild.cs" />
-    <Compile Include="Assets\Scripts\interfaces\ITrainable.cs" />
-    <Compile Include="Assets\Scripts\units\PeonController.cs" />
-    <Compile Include="Assets\Scripts\buildings\Ressources.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\QueueListController.cs" />
+    <Compile Include="Assets\Scripts\QueuedItem.cs" />
     <Compile Include="Assets\Scripts\SceneManager.cs" />
     <Compile Include="Assets\Scripts\SelectionController.cs" />
+    <Compile Include="Assets\Scripts\buildings\HouseController.cs" />
+    <Compile Include="Assets\Scripts\buildings\Ressources.cs" />
+    <Compile Include="Assets\Scripts\interfaces\IActionable.cs" />
+    <Compile Include="Assets\Scripts\interfaces\IBuildable.cs" />
+    <Compile Include="Assets\Scripts\interfaces\ICanBuild.cs" />
+    <Compile Include="Assets\Scripts\interfaces\ICanTrainUnits.cs" />
+    <Compile Include="Assets\Scripts\interfaces\IQueuable.cs" />
+    <Compile Include="Assets\Scripts\interfaces\ISelectable.cs" />
+    <Compile Include="Assets\Scripts\interfaces\ITrainable.cs" />
+    <Compile Include="Assets\Scripts\units\PeonController.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

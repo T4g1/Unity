@@ -9,6 +9,8 @@ public class SelectionController : MonoBehaviour, IBeginDragHandler, IDragHandle
 {
     public Collider terrainCollider;
     public GameObject selectionOutliner;
+    public ActionListController actionArea;
+    public QueueListController queueArea;
 
     private List<GameObject> selectedList;
     private Vector2 firstPoint;
@@ -63,10 +65,14 @@ public class SelectionController : MonoBehaviour, IBeginDragHandler, IDragHandle
         {
             DeselectObject(selectedList[0]);
         }
+
+        actionArea.ClearButtons();
+        queueArea.ClearSelection();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        if (eventData.button != PointerEventData.InputButton.Left) return;
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -121,7 +127,11 @@ public class SelectionController : MonoBehaviour, IBeginDragHandler, IDragHandle
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        if (eventData.button != PointerEventData.InputButton.Left) return;
+
         selectionOutlinerImage.enabled = false;
+
+        OnSelectionPerformed();
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -143,6 +153,8 @@ public class SelectionController : MonoBehaviour, IBeginDragHandler, IDragHandle
                 if (obj.CompareTag("Selectable"))
                 {
                     SelectObject(obj);
+
+                    OnSelectionPerformed();
                 }
             }
         }
@@ -164,5 +176,17 @@ public class SelectionController : MonoBehaviour, IBeginDragHandler, IDragHandle
                 }
             }
         }
+    }
+
+    private void OnSelectionPerformed()
+    {
+        if (selectedList.Count <= 0)
+        {
+            return;
+        }
+
+        actionArea.DisplayActionListFor(selectedList[0]);
+
+        queueArea.DisplayQueueFor(selectedList[0]);
     }
 }

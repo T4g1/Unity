@@ -2,9 +2,8 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class PeonController : MonoBehaviour, IActionable, ISelectable, ICanBuild
+public class PeonController : BasicController, IActionable, ISelectable, ICanBuild, IQueuable
 {
-
     private NavMeshAgent nav;
     private Animator anim;
 
@@ -18,15 +17,31 @@ public class PeonController : MonoBehaviour, IActionable, ISelectable, ICanBuild
         }
     }
 
-    private void Awake()
+    [SerializeField]
+    private float queueTime;
+    public float QueueTime
     {
+        get
+        {
+            return QueueTime;
+        }
+    }
+
+    private new void Awake()
+    {
+        base.Awake();
+
         nav = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
     }
 
-    private void Update()
+    private new void Update()
     {
+        base.Update();
+
         anim.SetBool("IsWalking", nav.hasPath);
+
+        UpdateQueue();
     }
 
     public void OnFirstAction(Vector3 point)
