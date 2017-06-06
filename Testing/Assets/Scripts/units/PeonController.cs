@@ -4,7 +4,7 @@ using UnityEngine.AI;
 
 public class PeonController : BasicController, IActionable, ISelectable, ICanBuild, IQueuable
 {
-    private NavMeshAgent nav;
+    private Navigation navigation;
     private Animator anim;
 
     [SerializeField]
@@ -31,7 +31,7 @@ public class PeonController : BasicController, IActionable, ISelectable, ICanBui
     {
         base.Awake();
 
-        nav = GetComponent<NavMeshAgent>();
+        navigation = new Navigation();
         anim = GetComponent<Animator>();
     }
 
@@ -39,17 +39,17 @@ public class PeonController : BasicController, IActionable, ISelectable, ICanBui
     {
         base.Update();
 
-        anim.SetBool("IsWalking", nav.hasPath);
+        anim.SetBool("IsWalking", navigation.HasPath());
 
         UpdateQueue();
     }
 
-    public void OnFirstAction(Vector3 point)
+    public void OnMainAction(Vector3 point)
     {
     }
 
-    public void OnSecondAction(Vector3 point)
+    public void OnSecondaryAction(Vector3 point)
     {
-        nav.SetDestination(point);
+        navigation.SetDestination(point);
     }
 }

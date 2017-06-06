@@ -7,7 +7,6 @@ using UnityEngine.UI;
 
 public class SelectionController : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerDownHandler
 {
-    public Collider terrainCollider;
     public GameObject selectionOutliner;
     public ActionListController actionArea;
     public QueueListController queueArea;
@@ -162,7 +161,7 @@ public class SelectionController : MonoBehaviour, IBeginDragHandler, IDragHandle
         {
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (terrainCollider.Raycast(ray, out hit, Mathf.Infinity))
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity))
             {
                 foreach (GameObject selected in selectedList)
                 {
@@ -172,7 +171,7 @@ public class SelectionController : MonoBehaviour, IBeginDragHandler, IDragHandle
                         continue;
                     }
 
-                    obj.OnSecondAction(hit.point);
+                    obj.OnSecondaryAction(hit.point);
                 }
             }
         }

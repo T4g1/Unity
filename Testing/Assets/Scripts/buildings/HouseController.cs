@@ -15,11 +15,11 @@ public class HouseController : BasicController, IActionable, IBuildable, ICanTra
         }
     }
 
-    public void OnFirstAction(Vector3 point)
+    public void OnMainAction(Vector3 point)
     {
     }
 
-    public void OnSecondAction(Vector3 point)
+    public void OnSecondaryAction(Vector3 point)
     {
     }
 }
